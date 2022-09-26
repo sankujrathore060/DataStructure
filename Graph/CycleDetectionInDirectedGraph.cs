@@ -67,6 +67,7 @@ public class CycleDetectionInDirectedGraph{
 			string[] nodes = Console.ReadLine().Split(new char[] { ' ' });
 			graph.Add(nodes[0], nodes[1]);
 		}
+
 		graph.Print();
 
 		Console.WriteLine("Enter Start Node");
