@@ -34,7 +34,7 @@ class Graph{
 		}
 	}
 	
-	public void SortestPathUsingBellmanFord(int nodeCount, string[] nodes, string startNode){
+	public void SortestPath(int nodeCount, string[] nodes, string startNode){
 		Dictionary<string, int> distance = new Dictionary<string, int>();
 		foreach(var node in nodes){
 			distance.Add(node, int.MaxValue);
@@ -70,7 +70,7 @@ class Graph{
 	}
 }
 
-public class SortestPathUsingDijkstra{
+public class SortestPathUsingBellmanFord{
 	public static void Main(string[] args){
 		Graph graph = new Graph();
 		
@@ -89,6 +89,6 @@ public class SortestPathUsingDijkstra{
 		
 		Console.WriteLine("Enter Start Node");
 		string startNode = Console.ReadLine();
-		graph.SortestPathUsingBellmanFord(vertices.Length, vertices, startNode);		
+		graph.SortestPath(vertices.Length, vertices, startNode);		
 	}
 }
